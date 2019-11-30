@@ -9,12 +9,25 @@ app.displayBeer = function(queens){
     beers.forEach(function(queen) {
     const season = queen.seasons[0].id;
     const htmlAppend =
-    `<div class="queen-card">
-        <h3 class="queen-title">${queen.name}</h3>
-        <div class="image-container">
-        <img class="queen-image" src=${queen.image_url} alt=${queen.name} />
+    `<div class="card">
+    <div class="card-image">
+        <figure class="image is-3by2">
+        ${beerImage}
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+        <div class="media-content">
+            <p class="title is-4">${beerName}</p>
+            <p class="subtitle is-6">${beerTag}</p>
         </div>
-        <h4>Season: ${season} </h4>
+        </div>
+        <div class="content">
+        ${beerDesc}
+        <br>
+        <time datetime="2016-1-1">First Brewed: ${beerFirst}</time>
+        </div>
+    </div>
     </div>`;
     $(".beer-card").append(htmlAppend);
     }
