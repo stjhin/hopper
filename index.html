@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <title>Hopper</title>
+</head>
+<body>
+    <header class="hero is-dark is-bold">
+    <div class="hero-body">
+        <div class="container">
+        <h1 class="title">
+            Hopper
+        </h1>
+        <h2 class="subtitle">
+            Find beer that suits your mood.
+        </h2>
+        </div>
+            <div class="hero is-bold">
+                <div class="hero-body">
+                    <div class="container">
+                        <input class="input is-rounded" type="text" placeholder="Type in tag words, such as: hop, classic, playful, etc...">
+                    </div>
+                    <div class="level space-button">
+                        <div class="level-item">
+                            <div class="buttons">
+                                <button class="button is-rounded is-link is-medium">Get me a Beer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container">
+            <div class="beer-card" id="beerCard">
+        <!-- dynamic content goes here -->
+                <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                    ${beerImage}
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">${beerName}</p>
+                        <p class="subtitle is-6">${beerTag}</p>
+                    </div>
+                    </div>
+                    <div class="content">
+                    ${beerDesc}
+                    <br>
+                    <time datetime="2016-1-1">First Brewed: ${beerFirst}</time>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <footer class="hero-foot">
+        <div class="container">
+            <p>
+                data courtesy of <a href="https://punkapi.com/documentation/v2">Punk API</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
