@@ -10,6 +10,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .card-rounded {
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
 .beer-text {
@@ -18,4 +19,15 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 time.beer-brew {
     font-weight: bold !important;
+}
+
+img {
+    height: 200px !important;
+    width: auto !important;
+    margin: auto !important;
+    padding-top: 1rem;
+}
+
+.beer-img {
+    object-fit: contain;
 }
