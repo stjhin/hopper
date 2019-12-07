@@ -15,21 +15,21 @@ app.displayBeer = function(beer){
     // To recycle results
     $(".beer-card").empty();
 
-    beer.forEach(function(index, beer) {
+    beer.forEach(function(beer) {
         console.log(beer);
         
-        console.log(beer[index].name);
-        console.log(beer[index].image_url);
-        console.log(beer[index].description);
-        console.log(beer[index].first_brewed);
-        console.log(beer[index].food_pairing);
+        console.log(beer.name);
+        console.log(beer.image_url);
+        console.log(beer.description);
+        console.log(beer.first_brewed);
+        console.log(beer.food_pairing);
 
     // Things that need to get pulled from API
-        let beerImage = beer[index].image_url;
-        let beerName = beer[index].name;
-        let beerFood = beer[index].food_pairing;
-        let beerDesc = beer[index].description;
-        let beerFirst = beer[index].first_brewed;
+        let beerImage = beer.image_url;
+        let beerName = beer.name;
+        let beerFood = beer.food_pairing;
+        let beerDesc = beer.description;
+        let beerFirst = beer.first_brewed;
 
     // Append HTML for the card All Beer Result
     const htmlAppend =
