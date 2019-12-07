@@ -7,3 +7,15 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 .beer-card {
     margin-bottom: 2rem;
 }
+
+.card-rounded {
+    border-radius: 5px;
+}
+
+.beer-text {
+    color: #333 !important;
+}
+
+time.beer-brew {
+    font-weight: bold !important;
+}
