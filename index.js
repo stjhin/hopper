@@ -77,7 +77,6 @@ app.getBeer = function(food){
     }
     }).then(function(result){
         app.displayBeer(result);
-    
     })
 }
 
